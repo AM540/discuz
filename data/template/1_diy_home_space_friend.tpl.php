@@ -1,11 +1,11 @@
 <?php if(!defined('IN_DISCUZ')) exit('Access Denied'); hookscriptoutput('space_friend');
 0
-|| checktplrefresh('./template/default/home/space_friend.htm', './template/default/home/space_header.htm', 1499618028, 'diy', './data/template/1_diy_home_space_friend.tpl.php', './template/default', 'home/space_friend')
-|| checktplrefresh('./template/default/home/space_friend.htm', './template/default/home/space_friend_nav.htm', 1499618028, 'diy', './data/template/1_diy_home_space_friend.tpl.php', './template/default', 'home/space_friend')
-|| checktplrefresh('./template/default/home/space_friend.htm', './template/default/home/space_userabout.htm', 1499618028, 'diy', './data/template/1_diy_home_space_friend.tpl.php', './template/default', 'home/space_friend')
-|| checktplrefresh('./template/default/home/space_friend.htm', './template/default/common/header_common.htm', 1499618028, 'diy', './data/template/1_diy_home_space_friend.tpl.php', './template/default', 'home/space_friend')
-|| checktplrefresh('./template/default/home/space_friend.htm', './template/default/home/space_diy.htm', 1499618028, 'diy', './data/template/1_diy_home_space_friend.tpl.php', './template/default', 'home/space_friend')
-|| checktplrefresh('./template/default/home/space_friend.htm', './template/default/home/space_header_personalnv.htm', 1499618028, 'diy', './data/template/1_diy_home_space_friend.tpl.php', './template/default', 'home/space_friend')
+|| checktplrefresh('./template/default/home/space_friend.htm', './template/default/home/space_header.htm', 1505173549, 'diy', './data/template/1_diy_home_space_friend.tpl.php', './template/default', 'home/space_friend')
+|| checktplrefresh('./template/default/home/space_friend.htm', './template/default/home/space_friend_nav.htm', 1505173549, 'diy', './data/template/1_diy_home_space_friend.tpl.php', './template/default', 'home/space_friend')
+|| checktplrefresh('./template/default/home/space_friend.htm', './template/default/home/space_userabout.htm', 1505173549, 'diy', './data/template/1_diy_home_space_friend.tpl.php', './template/default', 'home/space_friend')
+|| checktplrefresh('./template/default/home/space_friend.htm', './template/default/common/header_common.htm', 1505173549, 'diy', './data/template/1_diy_home_space_friend.tpl.php', './template/default', 'home/space_friend')
+|| checktplrefresh('./template/default/home/space_friend.htm', './template/default/home/space_diy.htm', 1505173549, 'diy', './data/template/1_diy_home_space_friend.tpl.php', './template/default', 'home/space_friend')
+|| checktplrefresh('./template/default/home/space_friend.htm', './template/default/home/space_header_personalnv.htm', 1505173549, 'diy', './data/template/1_diy_home_space_friend.tpl.php', './template/default', 'home/space_friend')
 ;?>
 <?php if(empty($diymode)) { include template('common/header'); ?><div id="pt" class="bm cl">
 <div class="z">

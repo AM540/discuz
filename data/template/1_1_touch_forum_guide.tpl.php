@@ -1,6 +1,6 @@
 <?php if(!defined('IN_DISCUZ')) exit('Access Denied'); hookscriptoutput('guide');
 0
-|| checktplrefresh('./template/default/touch/forum/guide.htm', './template/default/touch/forum/guide_list_row.htm', 1499632904, '1', './data/template/1_1_touch_forum_guide.tpl.php', './template/default', 'touch/forum/guide')
+|| checktplrefresh('./template/default/touch/forum/guide.htm', './template/default/touch/forum/guide_list_row.htm', 1505681239, '1', './data/template/1_1_touch_forum_guide.tpl.php', './template/default', 'touch/forum/guide')
 ;?><?php include template('common/header'); ?><!-- header start -->
 <header class="header">
 <div class="hdc cl">

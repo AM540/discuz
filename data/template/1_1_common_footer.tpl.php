@@ -34,8 +34,6 @@ $('focuscur').innerHTML = Math.max(1, randomnum);
 showfocus();
 var focusautoshow = window.setInterval('showfocus(\'next\', 1);', 5000);
 </script>
-<?php } if($_G['uid'] && $_G['member']['allowadmincp'] == 1 && $_G['setting']['showpatchnotice'] == 1) { ?>
-<div class="focus patch" id="patch_notice"></div>
 <?php } ?><?php echo adshow("footerbanner/wp a_f/1");?><?php echo adshow("footerbanner/wp a_f/2");?><?php echo adshow("footerbanner/wp a_f/3");?><?php echo adshow("float/a_fl/1");?><?php echo adshow("float/a_fr/2");?><?php echo adshow("couplebanner/a_fl a_cb/1");?><?php echo adshow("couplebanner/a_fr a_cb/2");?><?php echo adshow("cornerbanner/a_cn");?><?php if(!empty($_G['setting']['pluginhooks']['global_footer'])) echo $_G['setting']['pluginhooks']['global_footer'];?>
 <div id="ft" class="wp cl">
 <div id="flk" class="y">
@@ -73,8 +71,6 @@ if(loginstatusobj != undefined && loginstatusobj != null) loginstatusobj.innerHT
 <script src="home.php?mod=spacecp&ac=follow&op=checkfeed&rand=<?php echo $_G['timestamp'];?>" type="text/javascript"></script>
 <?php } if(!isset($_G['cookie']['sendmail'])) { ?>
 <script src="home.php?mod=misc&ac=sendmail&rand=<?php echo $_G['timestamp'];?>" type="text/javascript"></script>
-<?php } if($_G['uid'] && $_G['member']['allowadmincp'] == 1 && !isset($_G['cookie']['checkpatch'])) { ?>
-<script src="misc.php?mod=patch&action=checkpatch&rand=<?php echo $_G['timestamp'];?>" type="text/javascript"></script>
 <?php } } if($_GET['diy'] == 'yes') { if(check_diy_perm($topic) && (empty($do) || $do != 'index')) { ?>
 <script src="<?php echo $_G['setting']['jspath'];?>common_diy.js?<?php echo VERHASH;?>" type="text/javascript"></script>
 <script src="<?php echo $_G['setting']['jspath'];?>portal_diy<?php if(!check_diy_perm($topic, 'layout')) { ?>_data<?php } ?>.js?<?php echo VERHASH;?>" type="text/javascript"></script>
@@ -100,7 +96,8 @@ h5n.shownotification('pm', '<?php echo $_G['siteurl'];?>home.php?mod=space&do=pm
 <?php } } ?>
 }
 </script>
-<?php } userappprompt();?><?php if($_G['basescript'] != 'userapp') { ?>
+<?php } ?>
+
 <div id="scrolltop">
 <?php if($_G['fid'] && $_G['mod'] == 'viewthread') { ?>
 <span><a href="forum.php?mod=post&amp;action=reply&amp;fid=<?php echo $_G['fid'];?>&amp;tid=<?php echo $_G['tid'];?>&amp;extra=<?php echo $_GET['extra'];?>&amp;page=<?php echo $page;?><?php if($_GET['from']) { ?>&amp;from=<?php echo $_GET['from'];?><?php } ?>" onclick="showWindow('reply', this.href)" class="replyfast" title="快速回复"><b>快速回复</b></a></span>
@@ -117,7 +114,7 @@ h5n.shownotification('pm', '<?php echo $_G['siteurl'];?>home.php?mod=space&do=pm
 <?php } ?>
 </div>
 <script type="text/javascript">_attachEvent(window, 'scroll', function () { showTopLink(); });checkBlind();</script>
-<?php } if(isset($_G['makehtml'])) { ?>
+<?php if(isset($_G['makehtml'])) { ?>
 <script src="<?php echo $_G['setting']['jspath'];?>html2dynamic.js?<?php echo VERHASH;?>" type="text/javascript"></script>
 <script type="text/javascript">
 var html_lostmodify = <?php echo TIMESTAMP;?>;
