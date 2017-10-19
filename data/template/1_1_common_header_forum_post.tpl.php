@@ -1,8 +1,8 @@
 <?php if(!defined('IN_DISCUZ')) exit('Access Denied'); 
 0
-|| checktplrefresh('./template/default/common/header.htm', './template/default/common/header_common.htm', 1505717813, '1', './data/template/1_1_common_header_forum_post.tpl.php', './template/default', 'common/header_forum_post')
-|| checktplrefresh('./template/default/common/header.htm', './template/default/common/header_qmenu.htm', 1505717813, '1', './data/template/1_1_common_header_forum_post.tpl.php', './template/default', 'common/header_forum_post')
-|| checktplrefresh('./template/default/common/header.htm', './template/default/common/pubsearchform.htm', 1505717813, '1', './data/template/1_1_common_header_forum_post.tpl.php', './template/default', 'common/header_forum_post')
+|| checktplrefresh('./template/default/common/header.htm', './template/default/common/header_common.htm', 1508426114, '1', './data/template/1_1_common_header_forum_post.tpl.php', './template/default', 'common/header_forum_post')
+|| checktplrefresh('./template/default/common/header.htm', './template/default/common/header_qmenu.htm', 1508426114, '1', './data/template/1_1_common_header_forum_post.tpl.php', './template/default', 'common/header_forum_post')
+|| checktplrefresh('./template/default/common/header.htm', './template/default/common/pubsearchform.htm', 1508426114, '1', './data/template/1_1_common_header_forum_post.tpl.php', './template/default', 'common/header_forum_post')
 ;?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -33,7 +33,7 @@
 <script type="text/javascript">HTMLNODE.className += ' widthauto'</script>
 <?php } if($_G['basescript'] == 'forum' || $_G['basescript'] == 'group') { ?>
 <script src="<?php echo $_G['setting']['jspath'];?>forum.js?<?php echo VERHASH;?>" type="text/javascript"></script>
-<?php } elseif($_G['basescript'] == 'home' || $_G['basescript'] == 'userapp') { ?>
+<?php } elseif($_G['basescript'] == 'home') { ?>
 <script src="<?php echo $_G['setting']['jspath'];?>home.js?<?php echo VERHASH;?>" type="text/javascript"></script>
 <?php } elseif($_G['basescript'] == 'portal') { ?>
 <script src="<?php echo $_G['setting']['jspath'];?>portal.js?<?php echo VERHASH;?>" type="text/javascript"></script>
