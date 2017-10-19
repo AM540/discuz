@@ -274,12 +274,12 @@ function checkusername(id) {
 		lastusername = username;
 	}
 	if(username.match(/<|"/ig)) {
-		errormessage(id, '昵称名包含敏感字符');
+		errormessage(id, '用户名包含敏感字符');
 		return;
 	}
 	var unlen = username.replace(/[^\x00-\xff]/g, "**").length;
 	if(unlen < 3 || unlen > 15) {
-		errormessage(id, unlen < 3 ? '昵称名不得小于 3 个字符' : '昵称名不得超过 15 个字符');
+		errormessage(id, unlen < 3 ? '用户名不得小于 3 个字符' : '用户名不得超过 15 个字符');
 		return;
 	}
 	var x = new Ajax();
