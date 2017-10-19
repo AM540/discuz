@@ -100,7 +100,7 @@
 <?PHP exit;?>	1498146962	admin	1	180.159.207.63	forums	GET={}; POST={};
 <?PHP exit;?>	1498147135	admin	1	180.159.207.63	index	GET={}; POST={};
 <?PHP exit;?>	1498147136	admin	1	180.159.207.63	setting	GET={operation=basic; }; POST={};
-<?PHP exit;?>	1498147183	admin	1	180.159.207.63	setting	GET={edit=yes; operation=basic; settingnew={bbname=乐我生活; sitename=lovewow; siteurl=http://www.lovewow.cn; adminemail=chenyilong@lovewow.cn; }; settingsubmit=提交; }; POST={operation=basic; settingnew={bbname=乐我生活; sitename=lovewow; siteurl=http://www.lovewow.cn; adminemail=chenyilong@lovewow.cn; }; settingsubmit=提交; };
+<?PHP exit;?>	1498147183	admin	1	180.159.207.63	setting	GET={edit=yes; operation=basic; settingnew={bbname=乐我生活; sitename=lovewow; siteurl=http://bbs.lovewow.cn; adminemail=chenyilong@lovewow.cn; }; settingsubmit=提交; }; POST={operation=basic; settingnew={bbname=乐我生活; sitename=lovewow; siteurl=http://bbs.lovewow.cn; adminemail=chenyilong@lovewow.cn; }; settingsubmit=提交; };
 <?PHP exit;?>	1498147186	admin	1	180.159.207.63	setting	GET={operation=basic; }; POST={};
 <?PHP exit;?>	1498147208	admin	1	180.159.207.63	setting	GET={operation=access; }; POST={};
 <?PHP exit;?>	1498147211	admin	1	180.159.207.63	setting	GET={operation=functions; }; POST={};
